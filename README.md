@@ -10,18 +10,18 @@ The receiver needs to be on the network and the network remote option has to be 
 
 ## Code sample
 ````coffee
-	connection = new (require './lib/connection')
-	command = new (require './lib/commands')(connection)
+connection = new (require './lib/connection')
+command = new (require './lib/commands')(connection)
+
+connection.connect '192.168.1.20', 23, ->
+  console.log 'connected to the receiver'
+  
+  # turn it on!
+  command.power true
+  
+  # change volume
+  command.volume 30
 	
-	connection.connect '192.168.1.20', 23, ->
-	  console.log 'connected to the receiver'
-	  
-	  # turn it on!
-	  command.power true
-	  
-	  # change volume
-	  command.volume 30
-		
-	connection.response (cmd, value)->
-	  console.log cmd, value
+connection.response (cmd, value)->
+  console.log cmd, value
 ````
