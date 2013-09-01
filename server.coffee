@@ -9,8 +9,12 @@ app = express()
 server = require('http').createServer(app)
 io = require('socket.io').listen(server)
 
+app.set 'view engine', 'jade'
 app.use express.bodyParser()
-app.use express.static('web')
+app.use express.static 'public'
+
+app.get '/', (req, res)->
+   res.render 'index'
 
 server.listen(8000)
 

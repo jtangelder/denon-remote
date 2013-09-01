@@ -23,6 +23,8 @@
 
   "dependencies": {
     "express"  : "*",
-    "socket.io": "*"
+    "socket.io": "*",
+    "coffee-script": "*",
+    "jade": "*"
   }
 }
