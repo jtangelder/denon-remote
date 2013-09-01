@@ -4,7 +4,7 @@ denon-remote
 Send/get commands from a Denon AV receiver over a network connection. Tested for my Denon AVR X1000.
 In the file protocol.pdf you can find all the commands and responses from the device. 
 
-Install Node with Coffeescript, execute `npm install` and run `coffee index.coffee`.
+Install Node with Coffeescript, execute `npm install` and run `coffee server.coffee`.
 It will start a simple webserver on `localhost:8000`, showing you the live status of the device.
 
 ## How it works

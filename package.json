@@ -1,11 +1,16 @@
 {
-  "name": "denon",
-  "version": "0.0.0",
+  "name"       : "denon",
+  "version"    : "0.0.0",
   "description": "Control a Denon AVR X1000 receiver",
-  "main": "index.coffee",
-  "scripts": {
+  "main"       : "index.coffee",
+  "scripts"    : {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository" : {
+    "type": "git",
+    "url" : "http://github.com/jtangelder/denon-remote.git"
+  },
+
   "keywords": [
     "denon",
     "av",
@@ -13,11 +18,11 @@
     "remote",
     "telnet"
   ],
-  "author": "J. Tangelder",
-  "license": "BSD",
-  
+  "author"  : "J. Tangelder",
+  "license" : "BSD",
+
   "dependencies": {
-    "express": "*",
+    "express"  : "*",
     "socket.io": "*"
   }
 }
