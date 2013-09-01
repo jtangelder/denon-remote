@@ -25,3 +25,7 @@ connection.connect '192.168.1.20', 23, ->
 connection.response (cmd, value)->
   console.log cmd, value
 ````
+
+## Run
+Install Node with Coffeescript, execute `npm install` and run `coffee index.coffee`.
+It will start a simple webserver on `localhost:8000`, showing you the live status of the device.
