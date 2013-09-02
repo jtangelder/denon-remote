@@ -8,15 +8,15 @@ module.exports = class DenonCommands
     @dcon.send "MV", vol
       
   # turn the device on/standby
-  mute: (toggle=true)=> 
+  mute: (toggle="?")=> 
     @dcon.send "MU", toggle.toUpperCase()
   
   # get the state of the the device 
   # or turn the device on/standby  
   power: (toggle="?")=> 
-    if toggle isnt "?"
+    if typeof toggle is 'boolean'
       toggle = if toggle is true then "ON" else "STANDBY"
-    @dcon.send "PW", toggle
+    @dcon.send "PW", toggle.toUpperCase()
         
   # get the selected input of the the device 
   # or change the input.
