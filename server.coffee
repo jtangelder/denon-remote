@@ -13,8 +13,7 @@ app.set 'view engine', 'jade'
 app.use express.bodyParser()
 app.use express.static 'public'
 
-app.get '/', (req, res)->
-   res.render 'index'
+app.get '/', (req, res)-> res.render 'index'
 
 server.listen(8000)
 

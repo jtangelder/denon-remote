@@ -16,13 +16,11 @@ module.exports = class DenonConnection
     if @connected then return cb()
     
     @socket.connect @port, @host, ()=>
-      console.info "connected with the receiver #{@host}:#{@port}"
       @connected = true
       
       setInterval =>
           cmd = @queue.shift()
           if cmd 
-            console.log "send command #{cmd}"
             @socket.write cmd
         , 1000
       cb()
