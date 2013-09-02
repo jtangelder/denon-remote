@@ -1,3 +1,5 @@
+#!/usr/bin/env coffee
+
 connection = new (require './lib/connection')
 command = new (require './lib/commands')(connection)
 

@@ -6,7 +6,7 @@ In the file protocol.pdf you can find all the commands and responses from the de
 
 Install Node with Coffeescript, execute `npm install`.
 
-Run `coffee cli.coffee 192.168.1.20` to connect to the receiver. You can enter commands to send to the receiver, and read it's output.
+Run `coffee cli 192.168.1.20` to connect to the receiver. You can enter commands to send to the receiver, and read it's output.
 A command could be `volume` to get the current level, or `power on` to turn the device on. The commands are the methods in commands.coffee.
 You can also send the protocol commands listed in protocol.pdf, to get the volume you can send this `mv ?` 
 
