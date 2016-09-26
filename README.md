@@ -3,7 +3,7 @@ CLI for my Denon AVR-X1000.
 
 ```
 $ npm install jtangelder/denon-remote -g
-$ denon help
+$ denon
 ```
 
 ## How does this works?
