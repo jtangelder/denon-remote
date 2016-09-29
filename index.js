@@ -10,8 +10,9 @@ const denon = new DenonClient();
 const cli = Vorpal();
 
 denon.on('connect', ()=> {
-  const { address } = denon.socket.address();
-  cli.log(colors.green(`Successfully connected to ${address}`));
+  const address = denon.socket.remoteAddress;
+  const port = denon.socket.remotePort;
+  cli.log(colors.green(`Successfully connected to ${address}:${port}`));
 });
 
 denon.on('error', err => {
