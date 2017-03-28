@@ -1,5 +1,5 @@
 # Denon Remote
-CLI for Denon AVR-X1000, and possibly others in the AVR serie.
+CLI for Denon AVR-X1000, and possibly others in the AVR serie. It is written in JavaScript, and runs on [node.js](https://nodejs.org).
 
 ```
 $ npm install jtangelder/denon-remote -g
