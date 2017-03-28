@@ -1,5 +1,5 @@
 # Denon Remote
-CLI for Denon AVR-X1000.
+CLI for Denon AVR-X1000, and possibly others in the AVR series.
 
 ```
 $ npm install jtangelder/denon-remote -g
