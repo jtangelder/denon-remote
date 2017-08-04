@@ -4,9 +4,10 @@ CLI for Denon AVR-X1000, and possibly others in the AVR serie. It is written in 
 ```
 $ npm install jtangelder/denon-remote -g
 $ denon
+denon$ help
 ```
 
 ## How does this works?
-You can control the receiver with a telnet connection on port 23. The receiver needs to be connected to your network and the Network Remote option has to be turned on.
+The receiver can be controlled over telnet on port 23. It needs to be connected to your network and the Network Remote setting has to be turned on.
 
-See protocol.pdf for extra commands and documentation.
+See protocol.pdf for more commands and documentation.
